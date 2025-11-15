@@ -1,0 +1,36 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page center */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Stylish text */
+.title {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Smooth fade-in animation */
+.container {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
